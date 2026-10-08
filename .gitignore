@@ -27,3 +27,6 @@ data/raw_pdfs/**/*.pdf
 data/processed/*
 !data/processed/.gitkeep
 data/registry.db
+
+data/test_pdfs/
+data/raw_pdfs/
