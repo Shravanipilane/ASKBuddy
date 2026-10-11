@@ -20,3 +20,12 @@ MIN_SCORE = 0.55   # below this, the question is treated as not in the book
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 GEMINI_FALLBACK_MODEL = os.getenv("GEMINI_FALLBACK_MODEL", "")
+
+# ---- Voice input (speech-to-text) ----
+STT_MODEL_SIZE = os.getenv("STT_MODEL_SIZE", "small")       
+STT_COMPUTE_TYPE = os.getenv("STT_COMPUTE_TYPE", "int8")    
+STT_LANGUAGE = os.getenv("STT_LANGUAGE", "en")               # "en", "hi", or "auto"
+STT_CPU_THREADS = int(os.getenv("STT_CPU_THREADS", "0"))     # 0 = default
+STT_MAX_SECONDS = int(os.getenv("STT_MAX_SECONDS", "30"))
+STT_MAX_UPLOAD_MB = int(os.getenv("STT_MAX_UPLOAD_MB", "10"))
+STT_PROMPT = "A student's question about an NCERT textbook: biology, physics, chemistry, mathematics."

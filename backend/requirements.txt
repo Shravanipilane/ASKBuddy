@@ -3,3 +3,7 @@ chromadb
 sentence-transformers
 python-dotenv
 google-genai
+faster-whisper
+fastapi
+uvicorn
+python-multipart
