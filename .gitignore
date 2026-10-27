@@ -30,3 +30,11 @@ data/registry.db
 
 data/test_pdfs/
 data/raw_pdfs/
+
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+venv312/
+.env
+data/backups/

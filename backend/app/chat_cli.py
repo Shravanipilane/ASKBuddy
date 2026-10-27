@@ -3,26 +3,27 @@ os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TQDM_DISABLE", "1")
 
-from app.retrieval.retriever import build_where
-from app.generation.rag_chain import answer
+import time
+
+from app.chat.pipeline import chat_turn
 
 
 def _to_int(value: str):
     return int(value) if value.strip().isdigit() else None
 
 
-def choose_chapter():
+def choose_chapter() -> dict:
     print("\nWhich chapter? (press Enter to skip any)")
     subject = input("  Subject (e.g. biology): ").strip().title() or None
     std = _to_int(input("  Class (11 or 12): "))
     chapter = _to_int(input("  Chapter number: "))
-    return build_where(subject, std, chapter)
+    return {"subject": subject, "std": std, "chapter": chapter}
 
 
-# ---- Step 1: get the question as text, by typing or speaking ----
+# ---- Input: type or speak ----
 
 def question_from_typing() -> str:
-    return input("\nType your question: ").strip()
+    return input("\nType your message: ").strip()
 
 
 def question_from_voice() -> str:
@@ -37,53 +38,84 @@ def question_from_voice() -> str:
         return ""
 
     print("Converting speech to text...")
+    t0 = time.time()
     result = transcribe(audio)
+    print(f"(speech to text took {time.time() - t0:.1f}s)")
     text = result["text"]
     if not text:
         print("I could not hear anything clearly. Please try again.")
         return ""
 
     print(f"\nI heard: {text}")
-    fixed = input("Press Enter to use this, or type the corrected question: ").strip()
+    fixed = input("Press Enter to use this, or type the corrected message: ").strip()
     return fixed or text
 
 
-# ---- Step 2: send the text to the RAG chain ----
+# ---- Output: show, and optionally speak ----
 
-def show_answer(question: str, where) -> None:
-    print("\nThinking...")
-    try:
-        out = answer(question, where=where)
-    except Exception as e:
-        print(f"Error: {e}")
-        return
-    print("\n" + out["answer"])
-    if out["sources"]:
+def show_reply(reply: dict) -> None:
+    print(f"\n[{reply['route']} | mood: {reply['mood']}]")
+    print("\n" + reply["book_answer"])
+    if reply["fun_extra"]:
+        print("\n  Fun extra (not from your book): " + reply["fun_extra"])
+    if reply["next_prompt"]:
+        print("\n  " + reply["next_prompt"])
+    if reply["sources"]:
         print("\nSources:")
-        for s in out["sources"]:
-            print(f"  Chapter {s['chapter']}, page {s['page']} (score {s['score']})")
+        for s in reply["sources"]:
+            print(f"  {s['subject']} class {s['std']}, chapter {s['chapter']}, page {s['page']} (score {s['score']})")
 
 
-def main():
+def play_text(text: str) -> None:
+    try:
+        from app.voice.tts import warm_up, speak
+        from app.voice.player import play
+
+        print("\n(Loading voice model, first time only...)")
+        warm_up()
+        t0 = time.time()
+        result = speak(text)
+        print(f"(text to speech took {time.time() - t0:.1f}s, press Ctrl+C to stop playing)")
+        play(result["audio"], result["sample_rate"])
+    except Exception as e:
+        print(f"Could not play the answer: {e}")
+
+
+def main() -> None:
     print("=== ASKBuddy ===")
-    where = choose_chapter()
+    name = input("What's your name? (press Enter to skip): ").strip() or None
+    scope = choose_chapter()
+    session_id = None
+
+    reply = chat_turn("hi", session_id, scope, name)
+    session_id = reply["session_id"]
+    print("\n" + reply["text"])
+    play_text(reply["spoken_text"])
+
     try:
         while True:
             choice = input("\n[1] Type   [2] Speak   [c] Change chapter   [q] Quit : ").strip().lower()
             if choice == "q":
                 break
             if choice == "c":
-                where = choose_chapter()
+                scope = choose_chapter()
                 continue
             if choice == "1":
-                question = question_from_typing()
+                message = question_from_typing()
             elif choice == "2":
-                question = question_from_voice()
+                message = question_from_voice()
             else:
                 print("Please choose 1, 2, c or q.")
                 continue
-            if question:
-                show_answer(question, where)
+            if not message:
+                continue
+
+            print("\nThinking...")
+            reply = chat_turn(message, session_id, scope, name)
+            session_id = reply["session_id"]
+            show_reply(reply)
+            if input("\nPlay the answer aloud? [y/N]: ").strip().lower() == "y":
+                play_text(reply["spoken_text"])
     except (KeyboardInterrupt, EOFError):
         pass
     print("\nBye!")

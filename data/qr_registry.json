@@ -1,0 +1,4 @@
+{
+  "_readme": "Maps a QR code key to a chapter. A key can be the full link, its last path segment, or a value inside the link. Replace the example below with your real NCERT QR links.",
+  "bio11-ch1": {"subject": "Biology", "std": 11, "chapter": 1, "title": "The Living World"}
+}
