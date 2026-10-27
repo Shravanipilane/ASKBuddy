@@ -2,7 +2,7 @@ import logging
 
 from fastapi import APIRouter
 
-from backend.app.api.catalog import list_chapters
+from app.chat.catalog import list_chapters
 
 log = logging.getLogger("askbuddy.catalog")
 router = APIRouter(tags=["catalog"])

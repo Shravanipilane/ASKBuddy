@@ -1,6 +1,0 @@
--r requirements.txt
--r requirements-tts.txt
-sounddevice
-numpy
-pytest
-httpx

@@ -1,6 +1,6 @@
 import os
 
-from backend.app.api import catalog
+from app.api import catalog
 
 os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")
 os.environ.setdefault("HF_HUB_OFFLINE", "1")       # models are downloaded once, ahead of time
