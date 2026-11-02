@@ -56,3 +56,7 @@ MAX_QUESTION_CHARS = int(os.getenv("MAX_QUESTION_CHARS", "500"))
 QR_REGISTRY_PATH = Path(os.getenv("QR_REGISTRY_PATH", str(ROOT_DIR / "data" / "qr_registry.json")))
 VOICE_CONCURRENCY = int(os.getenv("VOICE_CONCURRENCY", "1"))
 WARM_UP_ON_START = os.getenv("WARM_UP_ON_START", "false").lower() == "true"
+
+# When the chapter has no good match: False = say "not found" (book-only tutor), True = answer from
+# Gemini's general knowledge, clearly labelled as not from the book.
+ALLOW_GENERAL_ANSWERS = os.getenv("ALLOW_GENERAL_ANSWERS", "false").lower() == "true"

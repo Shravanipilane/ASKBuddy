@@ -1,4 +1,5979 @@
 {
-  "_readme": "Maps a QR code key to a chapter. A key can be the full link, its last path segment, or a value inside the link. Replace the example below with your real NCERT QR links.",
-  "bio11-ch1": {"subject": "Biology", "std": 11, "chapter": 1, "title": "The Living World"}
+  "_readme": "Maps NCERT QR codes to chapters. Each code appears twice: bare code and full epathshala link. Chapter numbers restart in every part, like the database. Do not guess codes: add only codes read from the book.",
+  "11110CH01": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11110CH01": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "11110CH02": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11110CH02": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "11110CH03": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11110CH03": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "11110CH04": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11110CH04": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "11110CH05": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11110CH05": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "11110CH06": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11110CH06": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "11110CH07": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11110CH07": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 1,
+    "chapter": 7
+  },
+  "11112CH09": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11112CH09": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "11112CH10": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11112CH10": {
+    "subject": "Accountancy",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "11080CH01": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH01": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11080CH02": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH02": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11080CH03": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH03": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11080CH04": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH04": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11080CH05": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH05": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11080CH06": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH06": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11080CH07": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH07": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11080CH08": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH08": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11080CH09": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH09": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "11080CH10": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH10": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "11080CH13": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH13": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "11080CH14": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH14": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "11080CH15": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH15": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 13
+  },
+  "11080CH17": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 14
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH17": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 14
+  },
+  "11080CH18": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 15
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH18": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 15
+  },
+  "11080CH19": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 16
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH19": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 16
+  },
+  "11080CH20": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 17
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH20": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 17
+  },
+  "11080CH21": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 18
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH21": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 18
+  },
+  "11080CH22": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 19
+  },
+  "http://epathshala.nic.in/QR/?id=11080CH22": {
+    "subject": "Biology",
+    "std": 11,
+    "part": 0,
+    "chapter": 19
+  },
+  "11150CH01": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH01": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11150CH02": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH02": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11150CH03": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH03": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11150CH04": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH04": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11150CH05": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH05": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11150CH06": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH06": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11150CH07": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH07": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11150CH08": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH08": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11150CH09": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH09": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "11150CH10": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH10": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "11150CH11": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH11": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "11150CH12": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=11150CH12": {
+    "subject": "Biotechnology",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "11108CH01": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH01": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11108CH02": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH02": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11108CH03": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH03": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11108CH04": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH04": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11108CH05": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH05": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11108CH06": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH06": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11108CH07": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH07": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11108CH08": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH08": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11108CH09": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH09": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "11108CH10": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH10": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "11108CH11": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11108CH11": {
+    "subject": "Business Studies",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "11082CH01": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11082CH01": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "11082CH02": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11082CH02": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "11082CH03": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11082CH03": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "11082CH04": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11082CH04": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "11082CH06": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11082CH06": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "11082CH07": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11082CH07": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "11083CH08": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11083CH08": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "11083CH12": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11083CH12": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "11083CH13": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11083CH13": {
+    "subject": "Chemistry",
+    "std": 11,
+    "part": 2,
+    "chapter": 3
+  },
+  "11120CH01": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH01": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11120CH02": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH02": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11120CH03": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH03": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11120CH04": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH04": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11120CH05": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH05": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11120CH06": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH06": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11120CH07": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH07": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11120CH08": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH08": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11120CH09": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH09": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "11120CH10": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH10": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "11120CH11": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11120CH11": {
+    "subject": "Computer Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "11100CH01": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11100CH01": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11100CH02": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11100CH02": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11100CH03": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11100CH03": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11100CH05": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11100CH05": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11100CH06": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11100CH06": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11100CH07": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11100CH07": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11100CH09": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11100CH09": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11100CH10": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11100CH10": {
+    "subject": "Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11072CH01": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH01": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11072CH02": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH02": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11072CH03": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH03": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11072CH05": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH05": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11072CH07": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH07": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11072CH08": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH08": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11072CH09": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH09": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11072CH10": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH10": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11072CH11": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH11": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "11072CH12": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH12": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "11072CH13": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH13": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "11072CH14": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=11072CH14": {
+    "subject": "English Hornbill",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "11073CH01": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11073CH01": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11073CH02": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11073CH02": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11073CH05": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11073CH05": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11073CH07": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11073CH07": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11073CH08": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11073CH08": {
+    "subject": "English Snapshots",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11074CH01": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH01": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11074CH02": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH02": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11074CH03": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH03": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11074CH04": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH04": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11074CH05": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH05": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11074CH06": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH06": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11074CH07": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH07": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11074CH08": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH08": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11074CH10": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH10": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "11074CH11": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH11": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "11074CH12": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH12": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "11074CH13": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH13": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "11074CH14": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH14": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 13
+  },
+  "11074CH15": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 14
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH15": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 14
+  },
+  "11074CH16": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 15
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH16": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 15
+  },
+  "11074CH17": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 16
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH17": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 16
+  },
+  "11074CH18": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 17
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH18": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 17
+  },
+  "11074CH19": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 18
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH19": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 18
+  },
+  "11074CH20": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 19
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH20": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 19
+  },
+  "11074CH21": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 20
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH21": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 20
+  },
+  "11074CH22": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 21
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH22": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 21
+  },
+  "11074CH23": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 22
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH23": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 22
+  },
+  "11074CH24": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 23
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH24": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 23
+  },
+  "11074CH25": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 24
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH25": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 24
+  },
+  "11074CH26": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 25
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH26": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 25
+  },
+  "11074CH27": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 26
+  },
+  "http://epathshala.nic.in/QR/?id=11074CH27": {
+    "subject": "English Woven Words",
+    "std": 11,
+    "part": 0,
+    "chapter": 26
+  },
+  "11144CH01": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11144CH01": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11144CH02": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11144CH02": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11144CH03": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11144CH03": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11144CH04": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11144CH04": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11144CH05": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11144CH05": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11144CH06": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11144CH06": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11144CH07": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11144CH07": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11144CH08": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11144CH08": {
+    "subject": "Fine Art",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11092CH01": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH01": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "11092CH02": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH02": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "11092CH03": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH03": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "11092CH04": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH04": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "11092CH06": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH06": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "11092CH07": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH07": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "11092CH08": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH08": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 7
+  },
+  "11092CH09": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH09": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 8
+  },
+  "11092CH10": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH10": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 9
+  },
+  "11092CH11": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH11": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 10
+  },
+  "11092CH12": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH12": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 11
+  },
+  "11092CH13": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH13": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 12
+  },
+  "11092CH14": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH14": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 13
+  },
+  "11092CH15": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 14
+  },
+  "http://epathshala.nic.in/QR/?id=11092CH15": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 1,
+    "chapter": 14
+  },
+  "11094CH01": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11094CH01": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "11094CH02": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11094CH02": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "11094CH03": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11094CH03": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 3
+  },
+  "11094CH04": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11094CH04": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 4
+  },
+  "11094CH05": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11094CH05": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 5
+  },
+  "11094CH06": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11094CH06": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 2,
+    "chapter": 6
+  },
+  "11096CH01": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11096CH01": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 1
+  },
+  "11096CH02": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11096CH02": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 2
+  },
+  "11096CH03": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11096CH03": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 3
+  },
+  "11096CH04": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11096CH04": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 4
+  },
+  "11096CH05": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11096CH05": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 5
+  },
+  "11096CH07": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11096CH07": {
+    "subject": "Geography",
+    "std": 11,
+    "part": 3,
+    "chapter": 6
+  },
+  "11152CH01": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH01": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11152CH02": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH02": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11152CH03": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH03": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11152CH04": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH04": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11152CH05": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH05": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11152CH06": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH06": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11152CH07": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH07": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11152CH08": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH08": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11152CH09": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH09": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "11152CH10": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH10": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "11152CH11": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11152CH11": {
+    "subject": "Health And Physical Education",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "11090CH02": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11090CH02": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11090CH03": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11090CH03": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11090CH06": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11090CH06": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11090CH07": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11090CH07": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11090CH10": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11090CH10": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11090CH11": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11090CH11": {
+    "subject": "History",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11136CH01": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11136CH01": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11136CH02": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11136CH02": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11136CH03": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11136CH03": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11136CH04": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11136CH04": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11136CH05": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11136CH05": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11136CH06": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11136CH06": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11136CH10": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11136CH10": {
+    "subject": "Home Science",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11149CH01": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11149CH01": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11149CH02": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11149CH02": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11149CH03": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11149CH03": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11149CH04": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11149CH04": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11149CH05": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11149CH05": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11149CH06": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11149CH06": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11149CH07": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11149CH07": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11149CH08": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11149CH08": {
+    "subject": "Informatics Practices",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11076CH01": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH01": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11076CH02": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH02": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11076CH03": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH03": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11076CH05": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH05": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11076CH06": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH06": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11076CH07": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH07": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11076CH08": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH08": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11076CH09": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH09": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11076CH10": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH10": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 9
+  },
+  "11076CH11": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH11": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 10
+  },
+  "11076CH12": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH12": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 11
+  },
+  "11076CH13": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH13": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 12
+  },
+  "11076CH15": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH15": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 13
+  },
+  "11076CH16": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 14
+  },
+  "http://epathshala.nic.in/QR/?id=11076CH16": {
+    "subject": "Mathematics",
+    "std": 11,
+    "part": 0,
+    "chapter": 14
+  },
+  "11086CH02": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11086CH02": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "11086CH03": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11086CH03": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "11086CH04": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11086CH04": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "11086CH05": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11086CH05": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "11086CH06": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11086CH06": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "11086CH07": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11086CH07": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "11086CH08": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11086CH08": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 1,
+    "chapter": 7
+  },
+  "11087CH09": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11087CH09": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "11087CH10": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11087CH10": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "11087CH11": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11087CH11": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 3
+  },
+  "11087CH12": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11087CH12": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 4
+  },
+  "11087CH13": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11087CH13": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 5
+  },
+  "11087CH14": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11087CH14": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 6
+  },
+  "11087CH15": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11087CH15": {
+    "subject": "Physics",
+    "std": 11,
+    "part": 2,
+    "chapter": 7
+  },
+  "11117CH01": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11117CH01": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "11117CH02": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11117CH02": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "11117CH03": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11117CH03": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "11117CH04": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11117CH04": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "11117CH05": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11117CH05": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "11117CH06": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11117CH06": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 6
+  },
+  "11117CH07": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11117CH07": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 7
+  },
+  "11117CH08": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11117CH08": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 1,
+    "chapter": 8
+  },
+  "11102CH01": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH01": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "11102CH02": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH02": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 2
+  },
+  "11102CH03": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH03": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 3
+  },
+  "11102CH04": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH04": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 4
+  },
+  "11102CH05": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH05": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 5
+  },
+  "11102CH06": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH06": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 6
+  },
+  "11102CH07": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH07": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 7
+  },
+  "11102CH08": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH08": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 8
+  },
+  "11102CH09": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH09": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 9
+  },
+  "11102CH10": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=11102CH10": {
+    "subject": "Political Science",
+    "std": 11,
+    "part": 2,
+    "chapter": 10
+  },
+  "11114CH01": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11114CH01": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11114CH02": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11114CH02": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11114CH04": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11114CH04": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11114CH05": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11114CH05": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11114CH06": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11114CH06": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11114CH07": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11114CH07": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11114CH08": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11114CH08": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11114CH09": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11114CH09": {
+    "subject": "Psychology",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "11104CH01": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11104CH01": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 1
+  },
+  "11104CH02": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11104CH02": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 2
+  },
+  "11104CH03": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11104CH03": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 3
+  },
+  "11104CH04": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11104CH04": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 4
+  },
+  "11104CH05": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11104CH05": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 1,
+    "chapter": 5
+  },
+  "11106CH01": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11106CH01": {
+    "subject": "Sociology",
+    "std": 11,
+    "part": 2,
+    "chapter": 1
+  },
+  "11098CH01": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=11098CH01": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 1
+  },
+  "11098CH02": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=11098CH02": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 2
+  },
+  "11098CH03": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=11098CH03": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 3
+  },
+  "11098CH04": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=11098CH04": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 4
+  },
+  "11098CH05": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=11098CH05": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 5
+  },
+  "11098CH07": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=11098CH07": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 6
+  },
+  "11098CH08": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=11098CH08": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 7
+  },
+  "11098CH09": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=11098CH09": {
+    "subject": "Statistics For Economics",
+    "std": 11,
+    "part": 0,
+    "chapter": 8
+  },
+  "12117CH02": {
+    "subject": "Accountancy",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12117CH02": {
+    "subject": "Accountancy",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12117CH03": {
+    "subject": "Accountancy",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12117CH03": {
+    "subject": "Accountancy",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12117CH04": {
+    "subject": "Accountancy",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12117CH04": {
+    "subject": "Accountancy",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12117CH05": {
+    "subject": "Accountancy",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12117CH05": {
+    "subject": "Accountancy",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12083CH02": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH02": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12083CH03": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH03": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12083CH04": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH04": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12083CH05": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH05": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12083CH06": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH06": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12083CH07": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH07": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12083CH08": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH08": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "12083CH10": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH10": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "12083CH11": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH11": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "12083CH12": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH12": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "12083CH13": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH13": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "12083CH14": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH14": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "12083CH15": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=12083CH15": {
+    "subject": "Biology",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "12150CH01": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH01": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12150CH02": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH02": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12150CH03": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH03": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12150CH04": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH04": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12150CH05": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH05": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12150CH06": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH06": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12150CH07": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH07": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "12150CH08": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH08": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "12150CH09": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH09": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "12150CH10": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH10": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "12150CH11": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH11": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "12150CH12": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH12": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "12150CH13": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=12150CH13": {
+    "subject": "Biotechnology",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "12113CH01": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12113CH01": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12113CH02": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12113CH02": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12113CH03": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12113CH03": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12113CH04": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12113CH04": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12113CH05": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12113CH05": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12113CH06": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12113CH06": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "12113CH07": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12113CH07": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "12113CH08": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12113CH08": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 1,
+    "chapter": 8
+  },
+  "12114CH09": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12114CH09": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12114CH11": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12114CH11": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12114CH12": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12114CH12": {
+    "subject": "Business Studies",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12085CH02": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12085CH02": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12085CH03": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12085CH03": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12085CH04": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12085CH04": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12085CH08": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12085CH08": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12085CH09": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12085CH09": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12086CH10": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12086CH10": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12086CH11": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12086CH11": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12086CH12": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12086CH12": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12086CH13": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12086CH13": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12086CH14": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12086CH14": {
+    "subject": "Chemistry",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "12130CH01": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH01": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12130CH02": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH02": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12130CH03": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH03": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12130CH04": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH04": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12130CH05": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH05": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12130CH06": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH06": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12130CH07": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH07": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "12130CH08": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH08": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "12130CH09": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH09": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "12130CH10": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH10": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "12130CH11": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH11": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "12130CH12": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH12": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "12130CH13": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=12130CH13": {
+    "subject": "Computer Science",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "12105CH01": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12105CH01": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12105CH02": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12105CH02": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12105CH03": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12105CH03": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12105CH04": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12105CH04": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12105CH05": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12105CH05": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12105CH06": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12105CH06": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "12103CH01": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12103CH01": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12103CH02": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12103CH02": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12103CH03": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12103CH03": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12103CH04": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12103CH04": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12103CH05": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12103CH05": {
+    "subject": "Economics",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "12074CH01": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH01": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12074CH02": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH02": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12074CH03": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH03": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12074CH04": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH04": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12074CH05": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH05": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12074CH06": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH06": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12074CH07": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH07": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "12074CH08": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH08": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "12074CH09": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH09": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "12074CH11": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH11": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "12074CH12": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH12": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "12074CH13": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH13": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "12074CH14": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=12074CH14": {
+    "subject": "English Flamingo",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "12075CH01": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12075CH01": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12075CH02": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12075CH02": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12075CH03": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12075CH03": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12075CH04": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12075CH04": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12075CH06": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12075CH06": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12075CH08": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12075CH08": {
+    "subject": "English Vistas",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12076CH01": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH01": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12076CH02": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH02": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12076CH03": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH03": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12076CH04": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH04": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12076CH05": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH05": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12076CH06": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH06": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12076CH07": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH07": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "12076CH08": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH08": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "12076CH09": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH09": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "12076CH10": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH10": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 10
+  },
+  "12076CH11": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH11": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 11
+  },
+  "12076CH12": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH12": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 12
+  },
+  "12076CH13": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH13": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 13
+  },
+  "12076CH14": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 14
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH14": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 14
+  },
+  "12076CH15": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 15
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH15": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 15
+  },
+  "12076CH16": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 16
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH16": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 16
+  },
+  "12076CH17": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 17
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH17": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 17
+  },
+  "12076CH18": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 18
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH18": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 18
+  },
+  "12076CH19": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 19
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH19": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 19
+  },
+  "12076CH20": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 20
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH20": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 20
+  },
+  "12076CH21": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 21
+  },
+  "http://epathshala.nic.in/QR/?id=12076CH21": {
+    "subject": "English Kaleidoscope",
+    "std": 12,
+    "part": 0,
+    "chapter": 21
+  },
+  "12144CH01": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH01": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12144CH02": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH02": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12144CH03": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH03": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12144CH04": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH04": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12144CH05": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH05": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12144CH06": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH06": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12144CH07": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH07": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "12144CH08": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH08": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 8
+  },
+  "12144CH09": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=12144CH09": {
+    "subject": "Fine Art",
+    "std": 12,
+    "part": 0,
+    "chapter": 9
+  },
+  "12097CH01": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12097CH01": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12097CH02": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12097CH02": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12097CH04": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12097CH04": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12097CH05": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12097CH05": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12097CH06": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12097CH06": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12097CH07": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12097CH07": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "12097CH08": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12097CH08": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "12097CH09": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12097CH09": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 1,
+    "chapter": 8
+  },
+  "12099CH01": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH01": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12099CH04": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH04": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12099CH05": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH05": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12099CH06": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH06": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12099CH07": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH07": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "12099CH09": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH09": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "12099CH10": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH10": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "12099CH11": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH11": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 8
+  },
+  "12099CH12": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 9
+  },
+  "http://epathshala.nic.in/QR/?id=12099CH12": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 2,
+    "chapter": 9
+  },
+  "12101CH01": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 3,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12101CH01": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 3,
+    "chapter": 1
+  },
+  "12101CH02": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 3,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12101CH02": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 3,
+    "chapter": 2
+  },
+  "12101CH03": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 3,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12101CH03": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 3,
+    "chapter": 3
+  },
+  "12101CH06": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 3,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12101CH06": {
+    "subject": "Geography",
+    "std": 12,
+    "part": 3,
+    "chapter": 4
+  },
+  "12093CH01": {
+    "subject": "History",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12093CH01": {
+    "subject": "History",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12093CH02": {
+    "subject": "History",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12093CH02": {
+    "subject": "History",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12093CH03": {
+    "subject": "History",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12093CH03": {
+    "subject": "History",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12093CH04": {
+    "subject": "History",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12093CH04": {
+    "subject": "History",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12094CH05": {
+    "subject": "History",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12094CH05": {
+    "subject": "History",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12094CH06": {
+    "subject": "History",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12094CH06": {
+    "subject": "History",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12094CH07": {
+    "subject": "History",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12094CH07": {
+    "subject": "History",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12094CH08": {
+    "subject": "History",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12094CH08": {
+    "subject": "History",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12125CH10": {
+    "subject": "History",
+    "std": 12,
+    "part": 3,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12125CH10": {
+    "subject": "History",
+    "std": 12,
+    "part": 3,
+    "chapter": 1
+  },
+  "12125CH11": {
+    "subject": "History",
+    "std": 12,
+    "part": 3,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12125CH11": {
+    "subject": "History",
+    "std": 12,
+    "part": 3,
+    "chapter": 2
+  },
+  "12125CH13": {
+    "subject": "History",
+    "std": 12,
+    "part": 3,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12125CH13": {
+    "subject": "History",
+    "std": 12,
+    "part": 3,
+    "chapter": 3
+  },
+  "12125CH15": {
+    "subject": "History",
+    "std": 12,
+    "part": 3,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12125CH15": {
+    "subject": "History",
+    "std": 12,
+    "part": 3,
+    "chapter": 4
+  },
+  "12136CH01": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12136CH01": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12136CH02": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12136CH02": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12136CH03": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12136CH03": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12136CH05": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12136CH05": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12136CH06": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12136CH06": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12136CH07": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12136CH07": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "12136CH10": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12136CH10": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "12137CH11": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12137CH11": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12137CH12": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12137CH12": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12137CH15": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12137CH15": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12137CH17": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12137CH17": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12137CH20": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12137CH20": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "12137CH21": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12137CH21": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "12137CH24": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12137CH24": {
+    "subject": "Home Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "12149CH01": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12149CH01": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12149CH02": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12149CH02": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12149CH03": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12149CH03": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12149CH04": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12149CH04": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12149CH05": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12149CH05": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12149CH06": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12149CH06": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12149CH07": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12149CH07": {
+    "subject": "Informatics Practices",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "12079CH01": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12079CH01": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12079CH02": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12079CH02": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12079CH03": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12079CH03": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12079CH04": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12079CH04": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12079CH05": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12079CH05": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12079CH06": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12079CH06": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "12080CH07": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12080CH07": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12080CH08": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12080CH08": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12080CH09": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12080CH09": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12080CH10": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12080CH10": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12080CH11": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12080CH11": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "12080CH12": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12080CH12": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "12080CH13": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12080CH13": {
+    "subject": "Mathematics",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "12089CH01": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12089CH01": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12089CH02": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12089CH02": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12089CH03": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12089CH03": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12089CH04": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12089CH04": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12089CH05": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12089CH05": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12089CH06": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12089CH06": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "12089CH07": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12089CH07": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "12089CH08": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12089CH08": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 1,
+    "chapter": 8
+  },
+  "12090CH09": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12090CH09": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12090CH10": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12090CH10": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12090CH11": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12090CH11": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12090CH12": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12090CH12": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12090CH13": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12090CH13": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "12090CH14": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12090CH14": {
+    "subject": "Physics",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "12107CH02": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12107CH02": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12107CH04": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12107CH04": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12107CH05": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12107CH05": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12107CH06": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12107CH06": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12107CH07": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12107CH07": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12107CH08": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12107CH08": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "12107CH09": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12107CH09": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "12119CH01": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12119CH01": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12119CH02": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12119CH02": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12119CH03": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12119CH03": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12119CH04": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12119CH04": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12119CH05": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12119CH05": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "12119CH06": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12119CH06": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "12119CH07": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12119CH07": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "12119CH08": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12119CH08": {
+    "subject": "Political Science",
+    "std": 12,
+    "part": 2,
+    "chapter": 8
+  },
+  "12123CH01": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12123CH01": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 1
+  },
+  "12123CH02": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12123CH02": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 2
+  },
+  "12123CH03": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12123CH03": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 3
+  },
+  "12123CH04": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12123CH04": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 4
+  },
+  "12123CH05": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12123CH05": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 5
+  },
+  "12123CH06": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12123CH06": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 6
+  },
+  "12123CH07": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12123CH07": {
+    "subject": "Psychology",
+    "std": 12,
+    "part": 0,
+    "chapter": 7
+  },
+  "12111CH01": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12111CH01": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 1
+  },
+  "12111CH02": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12111CH02": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 2
+  },
+  "12111CH03": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12111CH03": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 3
+  },
+  "12111CH04": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12111CH04": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 4
+  },
+  "12111CH05": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12111CH05": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 5
+  },
+  "12111CH06": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12111CH06": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 6
+  },
+  "12111CH07": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12111CH07": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 1,
+    "chapter": 7
+  },
+  "12109CH01": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "http://epathshala.nic.in/QR/?id=12109CH01": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 1
+  },
+  "12109CH02": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "http://epathshala.nic.in/QR/?id=12109CH02": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 2
+  },
+  "12109CH03": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "http://epathshala.nic.in/QR/?id=12109CH03": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 3
+  },
+  "12109CH04": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "http://epathshala.nic.in/QR/?id=12109CH04": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 4
+  },
+  "12109CH05": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "http://epathshala.nic.in/QR/?id=12109CH05": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 5
+  },
+  "12109CH06": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "http://epathshala.nic.in/QR/?id=12109CH06": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 6
+  },
+  "12109CH07": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "http://epathshala.nic.in/QR/?id=12109CH07": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 7
+  },
+  "12109CH08": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 8
+  },
+  "http://epathshala.nic.in/QR/?id=12109CH08": {
+    "subject": "Sociology",
+    "std": 12,
+    "part": 2,
+    "chapter": 8
+  }
 }
