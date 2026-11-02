@@ -1,3 +1,4 @@
+# Needs Python 3.12 (the KittenTTS voice package does not install on 3.13 or newer)
 pymupdf
 chromadb
 sentence-transformers
@@ -7,3 +8,8 @@ faster-whisper
 fastapi
 uvicorn
 python-multipart
+numpy
+sounddevice
+pytest
+httpx
+kittentts @ https://github.com/KittenML/KittenTTS/releases/download/0.8.1/kittentts-0.8.1-py3-none-any.whl
