@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Avatar from "../components/Avatar";
 import TopNav from "../components/TopNav";
+import { askQuestion, speak, stopSpeaking, transcribeAudio } from "../api/ask";
 
 // The second line under "Hey, I'm your Buddy!" — a different one each time the page opens.
 const greetings = [
@@ -12,36 +13,37 @@ const greetings = [
     "Beep boop. Buddy mode: ON. What's up?",
 ];
 
-// TODO: replace this with a real fetch to your FastAPI /ask endpoint, e.g.:
-//
-// async function fetchAnswer(question) {
-//   const res = await fetch("http://localhost:8000/ask", {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({ question }),
-//   });
-//   if (!res.ok) throw new Error("Request failed");
-//   return res.json(); // expect { answer: string, sources: [{book, chapter, page}] }
-// }
-async function fetchAnswer(question) {
-    await new Promise((r) => setTimeout(r, 900)); // fake network delay
-    return {
-        answer: `(placeholder) Here's what I'd say about: "${question}". Swap fetchAnswer() in AskPage.jsx for your real backend call.`,
-        sources: [
-            { book: "Biology", chapter: "Chapter 1", page: 4 },
-            { book: "Biology", chapter: "Chapter 1", page: 7 },
-        ],
-    };
+const MIC_BLOCKED =
+    "The microphone is blocked. Click the lock icon next to the web address, allow the microphone, then reload the page.";
+const MIC_MISSING = "No microphone found. Check that one is connected.";
+const MIC_UNSUPPORTED = "Recording isn't supported in this browser. Try Chrome or Edge, or type instead.";
+const MIC_EMPTY = "I didn't catch that. Tap the mic, speak clearly, then tap it again to stop.";
+
+// The logged-in student's name (saved by api/auth.js), so Buddy can use it.
+function getUserName() {
+    try {
+        return JSON.parse(sessionStorage.getItem("user") || "{}").name || null;
+    } catch {
+        return null;
+    }
 }
 
 export default function AskPage() {
     const location = useLocation();
-    const [messages, setMessages] = useState([]); // { role: "user"|"assistant", content, sources? }
+    const [messages, setMessages] = useState([]); // { role, content, sources?, spoken? }
     const [input, setInput] = useState("");
     const [isLoading, setIsLoading] = useState(false);
-    const [isListening, setIsListening] = useState(false);
+    const [isRecording, setIsRecording] = useState(false);
+    const [isTranscribing, setIsTranscribing] = useState(false);
+    const [micError, setMicError] = useState("");
+    const [autoVoice, setAutoVoice] = useState(true);       // speak new answers automatically
+    const [playingIndex, setPlayingIndex] = useState(null); // which message is loading/playing
+    const [isSpeaking, setIsSpeaking] = useState(false);    // true only while sound is coming out
     const scrollRef = useRef(null);
-    const recognitionRef = useRef(null);
+    const recorderRef = useRef(null);
+    const autoStopRef = useRef(null);
+    const cancelledRef = useRef(false); // true when the page is closed while recording
+    const sessionIdRef = useRef(null);  // backend session, so follow-up questions work
     const [greeting] = useState(() => greetings[Math.floor(Math.random() * greetings.length)]);
 
     // prefill from Hub page's quick-ask bar
@@ -54,59 +56,150 @@ export default function AskPage() {
         scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
     }, [messages, isLoading]);
 
+    // Stop the voice and the recording if the student leaves this page
+    useEffect(() => {
+        cancelledRef.current = false;
+        return () => {
+            cancelledRef.current = true;
+            stopSpeaking();
+            clearTimeout(autoStopRef.current);
+            const rec = recorderRef.current;
+            if (rec && rec.state === "recording") rec.stop();
+        };
+    }, []);
+
+    // Play one message's audio. Clicking again while it plays stops it.
+    function playMessage(index, text) {
+        if (playingIndex === index) {
+            stopSpeaking();
+            return;
+        }
+        setPlayingIndex(index);
+        speak(text, {
+            onStart: () => setIsSpeaking(true),
+            onEnd: () => {
+                setIsSpeaking(false);
+                setPlayingIndex((prev) => (prev === index ? null : prev));
+            },
+        });
+    }
+
     async function handleSend(e) {
         e?.preventDefault();
         const question = input.trim();
-        if (!question || isLoading) return;
+        if (!question || isLoading || isRecording || isTranscribing) return;
 
+        stopSpeaking(); // stop the previous answer if it is still talking
+        setMicError("");
         setMessages((m) => [...m, { role: "user", content: question }]);
         setInput("");
         setIsLoading(true);
 
+        const assistantIndex = messages.length + 1; // user message is at messages.length
+
         try {
-            const { answer, sources } = await fetchAnswer(question);
-            setMessages((m) => [...m, { role: "assistant", content: answer, sources }]);
+            const data = await askQuestion({
+                message: question,
+                sessionId: sessionIdRef.current,
+                name: getUserName(),
+            });
+            sessionIdRef.current = data.sessionId;
+            setMessages((m) => [
+                ...m,
+                { role: "assistant", content: data.answer, sources: data.sources, spoken: data.spokenText },
+            ]);
+
+            // First time: the avatar talks by itself (if Auto voice is on)
+            if (autoVoice) playMessage(assistantIndex, data.spokenText);
         } catch (err) {
             setMessages((m) => [
                 ...m,
-                { role: "assistant", content: "Something went wrong — please try again.", sources: [] },
+                { role: "assistant", content: err.message || "Something went wrong — please try again.", sources: [] },
             ]);
         } finally {
             setIsLoading(false);
         }
     }
 
-    // Mic button using the browser's built-in SpeechRecognition (Web Speech API).
-    function handleMicClick() {
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        if (!SpeechRecognition) {
-            alert("Voice input isn't supported in this browser. Try typing instead.");
-            return;
-        }
-
-        if (isListening) {
-            recognitionRef.current?.stop();
-            return;
-        }
-
-        const recognition = new SpeechRecognition();
-        recognition.lang = "en-US";
-        recognition.interimResults = false;
-        recognition.maxAlternatives = 1;
-
-        recognition.onstart = () => setIsListening(true);
-        recognition.onend = () => setIsListening(false);
-        recognition.onerror = () => setIsListening(false);
-        recognition.onresult = (event) => {
-            const transcript = event.results[0][0].transcript;
-            setInput((prev) => (prev ? `${prev} ${transcript}` : transcript));
-        };
-
-        recognitionRef.current = recognition;
-        recognition.start();
+    function toggleAutoVoice() {
+        if (autoVoice) stopSpeaking();
+        setAutoVoice((v) => !v);
     }
 
-    const isSpeaking = isLoading; // swap for real "TTS is playing" state later
+    // Mic: record with the browser, then send the clip to the backend (Whisper) to get text.
+    async function handleMicClick() {
+        if (isTranscribing) return;
+
+        // Second click = stop recording (onstop below does the rest)
+        if (isRecording) {
+            recorderRef.current?.stop();
+            return;
+        }
+
+        if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+            setMicError(MIC_UNSUPPORTED);
+            return;
+        }
+
+        stopSpeaking(); // don't let Buddy talk over the student
+        setMicError("");
+
+        let stream;
+        try {
+            stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        } catch (err) {
+            setMicError(err.name === "NotFoundError" ? MIC_MISSING : MIC_BLOCKED);
+            return;
+        }
+
+        const recorder = new MediaRecorder(stream);
+        const chunks = [];
+        const base = input.trim() ? input.trim() + " " : "";
+
+        recorder.ondataavailable = (e) => {
+            if (e.data.size > 0) chunks.push(e.data);
+        };
+
+        recorder.onstop = async () => {
+            clearTimeout(autoStopRef.current);
+            stream.getTracks().forEach((t) => t.stop()); // turns the mic light off
+            if (cancelledRef.current) return;
+            setIsRecording(false);
+
+            const blob = new Blob(chunks, { type: recorder.mimeType || "audio/webm" });
+            if (blob.size < 1500) {
+                setMicError(MIC_EMPTY);
+                return;
+            }
+
+            setIsTranscribing(true);
+            try {
+                const text = await transcribeAudio(blob);
+                if (cancelledRef.current) return;
+                if (text) setInput(base + text);
+                else setMicError(MIC_EMPTY);
+            } catch (err) {
+                if (!cancelledRef.current) setMicError(err.message);
+            } finally {
+                if (!cancelledRef.current) setIsTranscribing(false);
+            }
+        };
+
+        recorderRef.current = recorder;
+        recorder.start();
+        setIsRecording(true);
+
+        // Safety: stop by itself after 30 seconds
+        autoStopRef.current = setTimeout(() => {
+            if (recorder.state === "recording") recorder.stop();
+        }, 30000);
+    }
+
+    const placeholder = isRecording
+        ? "Recording... tap the red button when you finish"
+        : isTranscribing
+            ? "Writing down what you said..."
+            : "Type your question, or tap the mic and speak...";
 
     return (
         <div className="flex min-h-screen w-full flex-col bg-surface">
@@ -131,6 +224,15 @@ export default function AskPage() {
                                 <span aria-hidden="true" className="absolute -right-5 bottom-4 text-lg opacity-60 motion-safe:animate-float" style={{ animationDirection: "alternate-reverse" }}>✨</span>
                                 <Avatar isSpeaking={isSpeaking} size={messages.length === 0 ? "lg" : "sm"} />
                             </div>
+
+                            <button
+                                type="button"
+                                onClick={toggleAutoVoice}
+                                className="rounded-full bg-mint-soft px-3 py-1 text-xs font-bold text-mint-ink transition hover:opacity-80"
+                                title={autoVoice ? "Buddy reads new answers aloud. Click to turn off." : "Auto voice is off. Click to turn on."}
+                            >
+                                {autoVoice ? "🔊 Auto voice on" : "🔇 Auto voice off"}
+                            </button>
                         </div>
 
                         {/* message list */}
@@ -143,7 +245,8 @@ export default function AskPage() {
                                             : "rounded-bl-sm bg-primary-soft text-ink"
                                             }`}
                                     >
-                                        <p>{m.content}</p>
+                                        <p className="whitespace-pre-line">{m.content}</p>
+
                                         {m.sources?.length > 0 && (
                                             <div className="mt-2 flex flex-wrap gap-1.5 border-t border-white/30 pt-2">
                                                 {m.sources.map((s, si) => (
@@ -156,6 +259,21 @@ export default function AskPage() {
                                                     </span>
                                                 ))}
                                             </div>
+                                        )}
+
+                                        {/* Listen / Stop button on every answer */}
+                                        {m.role === "assistant" && m.spoken && (
+                                            <button
+                                                type="button"
+                                                onClick={() => playMessage(i, m.spoken)}
+                                                className="mt-2 inline-flex items-center gap-1 rounded-full bg-white/70 px-3 py-1 text-xs font-bold text-primary-dark transition hover:bg-white"
+                                            >
+                                                {playingIndex === i
+                                                    ? isSpeaking
+                                                        ? "⏹ Stop"
+                                                        : "⏳ Loading..."
+                                                    : "🔊 Listen"}
+                                            </button>
                                         )}
                                     </div>
                                 </div>
@@ -175,29 +293,40 @@ export default function AskPage() {
                             <button
                                 type="button"
                                 onClick={handleMicClick}
-                                className={`flex h-10 w-10 shrink-0 flex-col items-center justify-center rounded-full text-base transition ${isListening
+                                disabled={isTranscribing}
+                                className={`flex h-10 w-10 shrink-0 flex-col items-center justify-center rounded-full text-base transition disabled:cursor-wait ${isRecording
                                     ? "animate-pulse bg-coral text-white"
                                     : "bg-coral-soft text-coral-ink hover:bg-coral hover:text-white"
                                     }`}
-                                title={isListening ? "Listening... click to stop" : "Click to speak"}
+                                title={
+                                    isRecording
+                                        ? "Recording... click to stop"
+                                        : isTranscribing
+                                            ? "Writing down what you said..."
+                                            : "Click to speak"
+                                }
                             >
-                                🎤
+                                {isRecording ? "⏹" : isTranscribing ? "⏳" : "🎤"}
                             </button>
                             <input
                                 type="text"
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
-                                placeholder="Type your question, or tap the mic and speak..."
+                                placeholder={placeholder}
                                 className="flex-1 bg-transparent text-sm text-ink placeholder-placeholder outline-none"
                             />
                             <button
                                 type="submit"
-                                disabled={!input.trim() || isLoading}
+                                disabled={!input.trim() || isLoading || isRecording || isTranscribing}
                                 className="shrink-0 rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-white transition hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-40"
                             >
                                 Send
                             </button>
                         </form>
+
+                        {micError && (
+                            <p className="mt-2 px-4 text-center text-xs font-bold text-coral-ink">{micError}</p>
+                        )}
                     </div>
                 </div>
             </div>
