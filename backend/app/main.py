@@ -16,6 +16,10 @@ from app.utils import config
 from app.db.mysql import engine
 from app.db.models import Base   # if Base lives in mysql.py, use: from app.db.mysql import engine, Base
 
+from app.api import catalog, chat, qr, voice, auth, history
+
+
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -64,6 +68,8 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+
+
 # Always allow the Vite dev server, plus anything already in config
 _origins = set(config.CORS_ORIGINS or [])
 _origins.update({
@@ -90,6 +96,7 @@ app.include_router(catalog.router)
 
 # Signup and Login routes
 app.include_router(auth.router)
+app.include_router(history.router)
 
 
 @app.get("/health")

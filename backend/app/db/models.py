@@ -44,6 +44,7 @@ class ChatSession(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    memory_session_id = Column(String(64), unique=True, nullable=True, index=True)
     title = Column(String(255), nullable=True)
     book = Column(String(100), nullable=True)
     chapter = Column(String(100), nullable=True)

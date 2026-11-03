@@ -51,6 +51,8 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Hub from './pages/Hub'
 import AskPage from './pages/AskPage'
+import Settings from './pages/Settings'
+import ChatHistory from "./pages/ChatHistory";
 import PageTransition from './components/PageTransition'
 
 // Each <Route> says: "when the address is this path, show this page".
@@ -66,6 +68,8 @@ export default function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/hub" element={<Hub />} />
           <Route path="/ask" element={<AskPage />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/history" element={<ChatHistory />} />
           {/* Any unknown address goes back to the Home page */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

@@ -26,6 +26,7 @@ def _label(meta: dict) -> str:
     return f"{meta.get('subject', '')}{part}"
 
 
+
 def _build(session: Session, route: str, book: str, fun: str = "", nxt: str = "",
            mood: str = "happy", sources: list | None = None, mode: str = "normal") -> dict:
     pieces = [p for p in (book, fun, nxt) if p]
@@ -36,11 +37,12 @@ def _build(session: Session, route: str, book: str, fun: str = "", nxt: str = ""
         "book_answer": book,
         "fun_extra": fun,
         "next_prompt": nxt,
-        "text": "\n\n".join(pieces),        # for display
-        "spoken_text": " ".join(pieces),    # send this to /voice/speak
+        "text": "\n\n".join(pieces),
+        "spoken_text": " ".join(pieces),
         "mood": mood,
         "sources": sources or [],
     }
+
 
 
 def _canned_reply(session: Session, route: str, kind: str, user_text: str) -> dict:
