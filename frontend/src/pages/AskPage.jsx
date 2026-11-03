@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Avatar from "../components/Avatar";
 import TopNav from "../components/TopNav";
 import { askQuestion, speak, stopSpeaking, transcribeAudio } from "../api/ask";
@@ -30,6 +30,25 @@ function getUserName() {
 
 export default function AskPage() {
     const location = useLocation();
+    const navigate = useNavigate();
+    // Chapter chosen on the QR page. Kept in sessionStorage so a refresh doesn't lose it.
+    const [qr] = useState(() => {
+        if (location.state?.qr) {
+            try { sessionStorage.setItem("qrChapter", JSON.stringify(location.state.qr)); } catch { /* ignore */ }
+            return location.state.qr;
+        }
+        try {
+            const saved = sessionStorage.getItem("qrChapter");
+            return saved ? JSON.parse(saved) : null;
+        } catch {
+            return null;
+        }
+    });
+
+    // No scanned book yet: send the student to the scan page first.
+    useEffect(() => {
+        if (!qr) navigate("/qr", { replace: true });
+    }, [qr, navigate]);
     const [messages, setMessages] = useState([]); // { role, content, sources?, spoken? }
     const [input, setInput] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -102,6 +121,8 @@ export default function AskPage() {
                 message: question,
                 sessionId: sessionIdRef.current,
                 name: getUserName(),
+                // If the student came from the QR page, keep answers inside that chapter
+                scope: qr ? { subject: qr.subject, std: qr.std, chapter: qr.chapter } : {},
             });
             sessionIdRef.current = data.sessionId;
             setMessages((m) => [
@@ -234,6 +255,23 @@ export default function AskPage() {
                                 {autoVoice ? "🔊 Auto voice on" : "🔇 Auto voice off"}
                             </button>
                         </div>
+
+                        {/* Which chapter we are asking about (comes from the QR page) */}
+                        {qr && (
+                            <div className="mb-2 flex items-center justify-center gap-2 text-xs font-bold text-mint-ink">
+                                <span className="rounded-full bg-mint-soft px-3 py-1">
+                                    📖 {qr.subject} · Class {qr.std} · Chapter {qr.chapter}
+                                </span>
+                                <button
+                                    type="button"
+                                    onClick={() => navigate("/qr")}
+                                    className="rounded-full border border-line px-2 py-0.5 text-ink/60 hover:text-ink"
+                                    title="Scan a different chapter"
+                                >
+                                    Change
+                                </button>
+                            </div>
+                        )}
 
                         {/* message list */}
                         <div ref={scrollRef} className="min-h-[30vh] max-h-[50vh] flex-1 space-y-4 overflow-y-auto px-1 py-3">

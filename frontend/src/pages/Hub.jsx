@@ -117,12 +117,16 @@ export default function Hub() {
                             </p>
                         </div>
 
+                        {/* Main action: scan the book first */}
                         <Link
-                            to="/ask"
+                            to="/qr"
                             className="mt-4 w-full rounded-full bg-primary px-6 py-3.5 text-center font-display text-lg font-bold text-white shadow-md transition hover:bg-primary-dark"
                         >
-                            💬 Open Ask Page
+                            📷 Scan your book to start
                         </Link>
+                        <p className="text-center text-sm text-muted">
+                            Scan the QR in your NCERT chapter, then ask your questions.
+                        </p>
                     </div>
 
                     {/* Right column */}

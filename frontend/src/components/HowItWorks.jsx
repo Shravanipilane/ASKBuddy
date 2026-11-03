@@ -1,7 +1,7 @@
 const steps = [
     {
-        title: 'Pick your book',
-        text: 'Choose your class, subject and chapter, or scan the QR code printed in your textbook.',
+        title: 'Scan your book',
+        text: 'Scan the QR code printed on your textbook chapter, with your phone camera or by pasting the code. ASKBuddy opens that chapter for you.',
     },
     {
         title: 'Ask your question',
