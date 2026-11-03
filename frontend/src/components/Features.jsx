@@ -26,7 +26,7 @@ const features = [
         icon: QrIcon,
         tone: 'mint',
         title: 'Scan the QR in your book',
-        text: 'A QR code jumps straight to the book, chapter and page you are reading. No searching, no setup.',
+        text: 'Scan the QR code printed on your NCERT chapter and ASKBuddy opens exactly that chapter. Then start asking questions right away, and every answer stays inside the chapter you are reading.',
     },
     {
         icon: BookIcon,

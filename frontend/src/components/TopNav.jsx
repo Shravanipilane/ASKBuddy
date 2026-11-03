@@ -15,7 +15,7 @@ function useCurrentUser() {
 
 const links = [
     { to: "/hub", label: "🏠 Hub" },
-    { to: "/ask", label: "💬 Ask" },
+    { to: "/qr", label: "📷 Scan QR" },
 ];
 
 // Shared top bar for every page past login: logo, nav links, profile menu.
