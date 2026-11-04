@@ -33,12 +33,14 @@ STT_PROMPT = "A student's question about an NCERT textbook: biology, physics, ch
 
 # ---- Voice output (text-to-speech) ----
 TTS_ENGINE = os.getenv("TTS_ENGINE", "kitten")
-TTS_MODEL = os.getenv("TTS_MODEL", "KittenML/kitten-tts-mini-0.8")
+TTS_MODEL = os.getenv("TTS_MODEL", "KittenML/kitten-tts-nano-0.8-fp32")
 TTS_VOICE = os.getenv("TTS_VOICE", "Kiki")
 TTS_SPEED = float(os.getenv("TTS_SPEED", "1.0"))
 TTS_SAMPLE_RATE = int(os.getenv("TTS_SAMPLE_RATE", "24000"))
-TTS_MAX_CHARS = int(os.getenv("TTS_MAX_CHARS", "1500"))    # long answers are cut here
-TTS_CHUNK_CHARS = int(os.getenv("TTS_CHUNK_CHARS", "300")) # speak in short pieces
+TTS_FIRST_CHARS = 70
+TTS_MAX_CHARS = int(os.getenv("TTS_MAX_CHARS", "500"))     # speak about the first 3 or 4 sentences
+TTS_CHUNK_CHARS = int(os.getenv("TTS_CHUNK_CHARS", "150")) # shorter pieces
+WARM_UP_ON_START = os.getenv("WARM_UP_ON_START", "true").lower() == "true"
 
 # ---- Chat brain / API ----
 CORS_ORIGINS = [

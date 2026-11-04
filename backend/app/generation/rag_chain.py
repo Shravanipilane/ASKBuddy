@@ -7,6 +7,17 @@ Answer the question using ONLY the context below. Explain simply and clearly.
 Start directly with the answer. Do not greet the student.
 Cite the book, chapter and page like (Physics Part 2, Ch 4, p. 226) where useful.
 If the answer is not in the context, say you could not find it in the provided chapter.
+MATHEMATICAL FORMATTING RULES:
+- Always represent mathematical formulas using LaTeX notation, not spoken descriptions.
+- Never write "pi over 180" when you mean a fraction. Write \\frac{\\pi}{180}.
+- Never write "x squared"; write x^2.
+- Never write "x subscript 1"; write x_1.
+- Use \\( ... \\) for inline mathematical expressions.
+- Use \\[ ... \\] for standalone equations.
+- When the textbook gives a formula, preserve and display that formula.
+- Explain the formula in normal language after displaying it.
+- Do not omit mathematical symbols or equations.
+- Keep page citations unchanged.
 
 Context:
 {context}

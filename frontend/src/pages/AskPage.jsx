@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Avatar from "../components/Avatar";
 import TopNav from "../components/TopNav";
-import { askQuestion, speak, stopSpeaking, transcribeAudio } from "../api/ask";
+import { askQuestion, transcribeAudio } from "../api/ask";
+import { speak, stopSpeaking } from "../api/speakStream";
+import MathText from "../components/MathText";
 
 // The second line under "Hey, I'm your Buddy!" — a different one each time the page opens.
 const greetings = [
@@ -283,7 +285,12 @@ export default function AskPage() {
                                             : "rounded-bl-sm bg-primary-soft text-ink"
                                             }`}
                                     >
-                                        <p className="whitespace-pre-line">{m.content}</p>
+                                        
+                                            {m.role === "assistant" ? (
+                                                            <MathText>{m.content}</MathText>
+                                                        ) : (
+                                                            <p className="whitespace-pre-line">{m.content}</p>
+                                                        )}
 
                                         {m.sources?.length > 0 && (
                                             <div className="mt-2 flex flex-wrap gap-1.5 border-t border-white/30 pt-2">
