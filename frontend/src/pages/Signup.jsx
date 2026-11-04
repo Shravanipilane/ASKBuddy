@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import AuthLayout from '../components/AuthLayout'
 import TextField from '../components/TextField'
 import SelectField from '../components/SelectField'
-import { CheckIcon } from '../components/Icons'
 import { signup } from '../api/auth'
 import { onlyProblems, validateEmail, validateName, validateNewPassword } from '../utils/validators'
 
@@ -29,6 +28,8 @@ function validate(form) {
 }
 
 export default function Signup() {
+    const navigate = useNavigate()
+
     // One object holds everything the student typed
     const [form, setForm] = useState({
         name: '',
@@ -45,7 +46,6 @@ export default function Signup() {
     const [submitted, setSubmitted] = useState(false)
 
     const [serverError, setServerError] = useState('')
-    const [success, setSuccess] = useState('')
     const [loading, setLoading] = useState(false)
 
     // Re-checked on every key press, so errors disappear as soon as the box is fixed
@@ -63,7 +63,6 @@ export default function Signup() {
     async function handleSubmit(event) {
         event.preventDefault()
         setServerError('')
-        setSuccess('')
         setSubmitted(true)
 
         const firstProblem = Object.keys(problems)[0]
@@ -75,14 +74,15 @@ export default function Signup() {
 
         setLoading(true)
         try {
-            const user = await signup({
+            // signup() saves the token and user to sessionStorage (see api/auth.js)
+            await signup({
                 name: form.name.trim(),
                 email: form.email.trim().toLowerCase(),
                 studentClass: form.studentClass,
                 stream: form.stream,
                 password: form.password,
             })
-            setSuccess(`Account created for ${user.name}! The Ask page will open here once we build it.`)
+            navigate('/hub')
         } catch (error) {
             setServerError(error.message)
         } finally {
@@ -147,16 +147,6 @@ export default function Signup() {
                 {serverError && (
                     <p role="alert" className="rounded-xl bg-red-50 px-4 py-3 font-medium text-red-700">
                         {serverError}
-                    </p>
-                )}
-
-                {success && (
-                    <p
-                        role="status"
-                        className="flex items-start gap-2 rounded-xl bg-mint-soft px-4 py-3 font-medium text-mint-ink"
-                    >
-                        <CheckIcon size={20} className="mt-0.5 shrink-0" />
-                        {success}
                     </p>
                 )}
 
