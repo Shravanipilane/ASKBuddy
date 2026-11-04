@@ -3,6 +3,7 @@ import io
 import re
 import threading
 import wave
+import time
 
 import numpy as np
 
@@ -75,7 +76,8 @@ def _get_engine():
 
 
 def warm_up() -> None:
-    _get_engine()
+    engine = _get_engine()
+    engine.synth("Hello! Welcome to ASKBuddy.")
 
 
 # ---------- 4. Word timings (for lip-sync later) ----------
@@ -99,30 +101,40 @@ def _spread_words(chunk: str, start_s: float, dur_s: float, words, wtimes, wdurs
 # ---------- 5. Public functions ----------
 
 def speak(text: str) -> dict:
-    """text in -> audio out.
+    start = time.perf_counter()
 
-    Returns {"audio": float32 array, "sample_rate": int, "duration_ms": int,
-             "words": [...], "wtimes": [ms...], "wdurations": [ms...]}
-    """
     cleaned = clean_text(text)
     if not cleaned:
         raise ValueError("Nothing to speak.")
 
     engine = _get_engine()
     sr = config.TTS_SAMPLE_RATE
-    gap = np.zeros(int(sr * 0.15), dtype=np.float32)       # short pause between pieces
+
+    gap = np.zeros(int(sr * 0.15), dtype=np.float32)
     parts, words, wtimes, wdurs = [], [], [], []
     cursor = 0.0
-    for chunk in split_chunks(cleaned):
+
+    for i, chunk in enumerate(split_chunks(cleaned)):
+        chunk_start = time.perf_counter()
+
         audio = engine.synth(chunk)
+
+        chunk_time = time.perf_counter() - chunk_start
+        print(f"TTS chunk {i + 1}: {chunk_time:.2f} seconds")
+
         dur = len(audio) / sr
         _spread_words(chunk, cursor, dur, words, wtimes, wdurs)
+
         parts.append(audio)
         parts.append(gap)
         cursor += dur + len(gap) / sr
 
+    result_audio = np.concatenate(parts)
+
+    print(f"Total TTS time: {time.perf_counter() - start:.2f} seconds")
+
     return {
-        "audio": np.concatenate(parts),
+        "audio": result_audio,
         "sample_rate": sr,
         "duration_ms": round(cursor * 1000),
         "words": words,
